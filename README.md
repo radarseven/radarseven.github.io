@@ -2,5 +2,5 @@ radarseven.github.io
 ====================
 
 ## Captain's Log
-### 08/23/2013
+### 2013-08-23
 Initial commit.
