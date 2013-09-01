@@ -1,9 +1,259 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"> 
 <head>
-	<title>Radarseven | mreiner</title>
+  <title>Hi. I'm Radarseven.</title>
+
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta http-equiv="content-language" content="en-us" />
+<meta name="author" content="Michael Reiner" />
+<meta name="description" content="The recent work of a fledgling father, web designer and web developer influenced by The Zeldman and SimpleBits Dan." />
+<meta name="DC.creator" lang="en" content="Michael Reiner/Radarseven" />
+<link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+
+<link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="/css/ie.css" type="text/css" media="screen" />
+<![endif]-->
+
+<script type="text/javascript">
+// Avoid a FOUC.  A great technique from http://www.learningjquery.com  (http://is.gd/46Yq)
+// While the aim is to remove all Javascript and place it in external files, this single line must be present in the head in order to 
+// get around a Flash Of Unstyled Content while the external Javascript is downloaded.
+document.getElementsByTagName('html')[0].className = 'js';
+</script>
+
+<!-- jQuery -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+
+<!-- jQuery Plugs -->
+<script type="text/javascript" src="/js/jQ/plugs/jquery.scrollfollow.min.js"></script>
+<script type="text/javascript" src="/js/jQ/plugs/jquery.qtip-1.0.0-rc3.min.js"></script>
+<script type="text/javascript" src="/js/jQ/plugs/jquery.scrollTo-1.4.2-min.js"></script>
+<script type="text/javascript" src="/js/jQ/plugs/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/js/jQ/plugs/jquery.pngFix.pack.js"></script>
+
+<!-- Fancybox -->
+<script type="text/javascript" src="/js/jQ/plugs/fancybox/jquery.fancybox-1.2.6.pack.js"></script>
+<link rel="stylesheet" href="/js/jQ/plugs/fancybox/jquery.fancybox-1.2.6.css" type="text/css" media="screen" />
+
+<!-- Site JS -->
+<script type="text/javascript" src="/js/radarseven.min.js"></script>
+<script src="/mint/?js" type="text/javascript"></script>
+
 </head>
 <body>
-	<h1>Hello.</h1>
+<div id="wrap">
+
+  <div id="header">
+    <img id="mark" src="/i/ui/mark.png" alt="" />
+  </div>
+
+  <div id="me">
+    <div id="me_inner">
+      <h1>Radarseven.</h1>
+      <p class="first">A one-man web <span class="strike">wrecking</span> crew.</p>
+      <ul class="contact">
+        <li class="email"><a href="mailto:mr@radarseven.com">mr@radarseven.com</a></li>
+        <li class="gv">+1 (717) 814-8151</li>
+        <li class="twitter"><a href="http://twitter.com/radarseven" rel="ext">radarseven</a></li>
+        <li class="flickr"><a href="http://flickr.com/photos/radarseven" rel="ext">Not-so-great photos</a></li>
+        <li class="apple">Made on a Mac.<br />By an Apple junkie.</li>
+        <li class="credit">These lovely icons courtesy of <a class="tip-url" href="http://komodomedia.com/" rel="ext">Rogie King @ Komodo Media</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="container">
+    <div id="inner">
+      
+      <div id="hi">
+        <h1>Hi<?=$hello?>.</h1>
+        <blockquote>
+          <p class="last"><strong>My name is <a class="tip-img" href="/i/me.jpg" rel="fb">Michael</a>.</strong><br />I am a husband, <a class="tip-img" href="/i/family.jpg" rel="fb">father</a>, musician and web designer and developer who believes simple is, almost always, <em>better.</em> Please peruse some of my recent work below.</p>
+        </blockquote>
+      </div><!-- // #hi -->
+      
+      <hr />
+
+      <div class="group">
+<!-- Skillz To Pay the Billz -->
+<div id="skills" class="fleft col2">
+  <h2 class="green">Proficiencies</h2>
+  <ul class="check">
+    <li>XHTML</li>
+    <li>CSS</li>
+    <li>Javascript</li>
+    <li>PHP</li>
+    <li>ExpressionEngine</li>
+  </ul>
+  <p>In addition to these, I am sincerely committed to always improving upon and learning new disciplines.</p>
+</div>
+<!-- Leave At The Door -->
+<div id="seeya" class="fright col2">
+  <h2 class="red">Left At the Door</h2>
+  <ul class="x">
+    <li>Ego</li>
+    <li>Attitude</li>
+    <li>Selfishness</li>
+    <li>Stubbornness</li>
+    <li>Laziness</li>
+  </ul>
+  <p>Though capable of working alone, I thoroughly enjoy and thrive in a team environment.</p>
+</div>
+
+</div>
+  
+<hr />
+
+<div class="group">
+<h3>cleure.com</h3>
+<h4 class="patch"><span>web</span></h4>
+<h5>Creative Director</h5>
+<p class="offline"><span>Site offline</span></p>
+<hr />
+<p>Responsible for design and development of this full e-commerce site. Currently in version 2.0, version 1.0 of this site allowed me to cut my teeth on building accessible HTML+CSS+Javascript web layouts, thanks in large part to <a class="tip-url" href="http://www.zeldman.com" rel="ext">Zeldman</a> and <a class="tip-url" href="http://simplebits.com" rel="ext">SimpleBits</a>. This site features integration with a proprietary backend content management and order fulfillment system. Phew.</p>
+<a class="hero" href="/i/screens/lg/cleure-01.png" rel="fb"><img src="/i/screens/thumbs/cleure-01.png" alt="" /></a>
+<ul class="gallery">
+  <li class="fleft"><a href="/i/screens/lg/cleure-02.png" rel="fb"><img src="/i/screens/thumbs/cleure-02.png" alt="" /></a></li>
+  <li class="fright"><a href="/i/screens/lg/cleure-03.png" rel="fb"><img src="/i/screens/thumbs/cleure-03.png" alt="" /></a></li>
+</ul>
+<a class="top" href="#">Top</a>   
+</div><!-- // .group -->
+
+<hr />
+
+<div class="group">
+<h3>tocara.com</h3>
+<h4 class="patch"><span>web</span></h4>
+<h5>Design and Development</h5>
+<a class="btn" href="http://tocara.com/" rel="ext">Visit website</a>
+<hr />
+<p>A small Canadian jewelry company approached me to design a website that highlighted their unique sterling silver jewelry. With limited direction from their internal team, I originated the concept, designed and developed the site using current web standards.</p>
+<a class="hero" href="/i/screens/lg/tocara-01.png" rel="fb"><img src="/i/screens/thumbs/tocara-01.png" alt="" /></a>
+<ul class="gallery">
+  <li class="fleft"><a href="/i/screens/lg/tocara-02.png" rel="fb"><img src="/i/screens/thumbs/tocara-02.png" alt="" /></a></li>
+  <li class="fright"><a href="/i/screens/lg/tocara-03.png" rel="fb"><img src="/i/screens/thumbs/tocara-03.png" alt="" /></a></li>
+</ul>
+<a class="top" href="#">Top</a>
+</div><!-- // .group  -->
+
+<hr />
+
+<div class="group">
+<h3>secretgateway<br />tohealth.com</h3>
+<h4 class="patch"><span>web + print</span></h4>
+<h5>Design and Development</h5>
+<a class="btn" href="http://secretgatewaytohealth.com" rel="ext">Visit website</a>
+<hr />
+<p>This site was developed to coincide with the <a href="http://tr.im/secretgatway" rel="ext">book release</a> of the same name, serving primarily as a PR tool for the author, Dr. Flora Stay. The goal was to highlight her diverse medical and business background. The site features HTML, CSS, Javascript, Flash and a custom XML-driven backend which deploys articles, videos and audio. Oh, and I also helped design the book cover too!</p>
+<a class="hero" href="/i/screens/lg/sgth-01.png" rel="fb"><img src="/i/screens/thumbs/sgth-01.png" alt="" /></a>
+<ul class="gallery">
+  <li class="fleft"><a href="/i/screens/lg/sgth-02.png" rel="fb"><img src="/i/screens/thumbs/sgth-02.png" alt="" /></a></li>
+  <li class="fright"><a href="/i/screens/lg/sgth-03.png" rel="fb"><img src="/i/screens/thumbs/sgth-03.png" alt="" /></a></li>
+</ul>
+<a class="top" href="#">Top</a>
+</div><!-- // .group -->
+
+<hr />
+
+<div class="group">
+<h3>dentalbusiness<br />academy.com</h3>
+<h4 class="patch"><span>web + brand</span></h4>
+<h5>Design and Development</h5>
+<p class="offline"><span>Site offline</span></p>
+<hr />
+<p>This site was designed and developed to support a program aimed at helping dentists grow their practice, while also touching up on their business savvy. The program itself was born of the collaboration between an entrepreneurial dentist owing many successful practices and a seasoned and experienced attorney specializing in the commercial sale of dental practices. The online course was delivered via digital download of MP3 audio files and a substantial PDF how-to manual.</p>
+<p>My responsibilities included identity design, website design and development, backend integration with a custom shopping cart system and a "backoffice" to securely deliver the digital files.</p>
+<a class="hero" href="/i/screens/lg/dba-01.png" rel="fb"><img src="/i/screens/thumbs/dba-01.png" alt="" /></a>
+<ul class="gallery">
+  <li class="fleft"><a href="/i/screens/lg/dba-02.png" rel="fb"><img src="/i/screens/thumbs/dba-02.png" alt="" /></a></li>
+  <li class="fright"><a href="/i/screens/lg/dba-03.png" rel="fb"><img src="/i/screens/thumbs/dba-03.png" alt="" /></a></li>
+</ul>
+<a class="top" href="#">Top</a>
+</div><!-- // .group -->
+
+<hr />
+
+<div class="group">
+<h3>hydrovive skin care</h3>
+<h4 class="patch"><span>brand</span></h4>
+<h5>Design</h5>
+<a class="btn" href="http://www.cleure.com/Products_SkinCare.aspx?ID=grace" rel="ext">Visit website</a>
+<hr />
+<p>An identity developed for a unique line of skin care products. The brand sought to convey a fresh identity, providing products free from many of the harmful chemical preservatives commonly found in more expensive and high-end retail skin care products. I was responsible for creating the name and designing the identity and product labeling. Since its inception, the product line continues to be the company's best selling and most profitable.</p>
+<a class="hero" href="/i/screens/lg/hydrovive-01.png" rel="fb"><img class="border" src="/i/screens/thumbs/hydrovive-01.png" alt="" /></a><br /><br />
+<ul class="gallery">
+  <li class="fleft"><a href="/i/screens/lg/hydrovive-02.png" rel="fb"><img src="/i/screens/thumbs/hydrovive-02.png" alt="" /></a></li>
+  <li class="fright"><a href="/i/screens/lg/hydrovive-03.png" rel="fb"><img src="/i/screens/thumbs/hydrovive-03.png" alt="" /></a></li>
+</ul>
+<a class="top" href="#">Top</a>
+</div><!-- // .group -->
+
+<hr />
+
+<div class="group">
+<h3>givemusic</h3>
+<h4 class="patch"><span>flash</span></h4>
+<h5>Design and Development</h5>
+<a class="btn" href="http://radarseven.com/givemusic" rel="ext">Visit archived website</a>
+<hr />
+<p>A personal project of mine, which in large part, sparked my <span class="strike">obsession</span> passion for the internet and largely contributed to where I am today.</p>
+
+<p>This project began back in 2004, after leaving Los Angeles, burnt out from pursuing a record deal in the star-soaked sun of Hollywood, CA. Upon relocating to the suburbs of Philadelphia with bandmates, we decided we were going to do things <em>differently</em> this time around. Rather than seek out a lucrative high-advance, major-label record deal, we would release our music and <em>give</em> it away free. Thusly, <strong>givemusic.net</strong> was born.</p>
+
+<img src="/i/screens/thumbs/give_logo.png" alt="Give" />
+
+<p>The site was initially conceived as simply an outlet to release and give away our music. However, with the iPod-era and digital music revolution booming, we began to envision greater possibilities for the site as an outlet for other groups to follow suit; an avenue that was unfortunately never truly explored.</p>
+
+<p>Rather than building a traditional "website," we strove to conceive of and build an immersive environment for the user, where they might spend time exploring and experiencing new music, and downloading it to their emerging digital music library &mdash; a concept only really beginning to catch on in the mainstream.</p>
+
+<p>The site is a gratuitous Flash site indeed; indicative of the era it was brought to fruition. Some great web talent was employed in making this ambitious site a reality. <a class="tip-url" href="http://nt-sky.com/" rel="ext">Sir Nightsky (James Allen)</a> was the artistic mastermind behind the Give player. <a class="tip-url" href="http://danielmall.com/" rel="ext">Dan Mall</a> helped debug some Actionscript and <a class="tip-url" href="http://howblue.com" rel="ext">Broen Westberg</a> built some of the early prototypes, not used in the final version.</p>
+
+<p>The site continued to grow, develop and improve over the course of a year or so after launch and saw several different unique "skins."</p>
+
+<p>This is a project I'm pretty proud of, mainly for the fact that it's representative of the results I believe are possible when you start with a great idea and add lots of grit, heart, determination and most importantly, hard work.</p>
+
+<p>Enjoy!</p>
+<a class="hero" href="/i/screens/lg/give-01.png" rel="fb"><img src="/i/screens/thumbs/give-01.png" alt="" /></a><br /><br />
+<ul class="gallery">
+  <li class="fleft"><a href="/i/screens/lg/give-02.png" rel="fb"><img src="/i/screens/thumbs/give-02.png" alt="" /></a></li>
+  <li class="fright"><a href="/i/screens/lg/give-03.png" rel="fb"><img src="/i/screens/thumbs/give-03.png" alt="" /></a></li>
+</ul>
+<a class="top" href="#">Top</a>
+</div><!-- // .group -->
+      
+    </div><!-- // #inner -->
+    
+  </div><!-- // #container -->
+</div><!-- // #wrap -->
+
+<!-- Footer -->
+<div id="footer">
+	<div id="footer-inner">
+		<h5>You made it to the end!</h5>
+		<p><strong>But seriously, thanks for stopping by!</strong> If you're really bored, you can also find me (sometimes) elsewhere on the intertubes:</p>
+		<ul class="getsocial clear">
+			<li class="first"><a href="http://twitter.com/radarseven" rel="ext">The Bird</a></li>
+			<li><a href="http://www.flickr.com/photos/radarseven" rel="ext">Pics</a></li>
+			<li class="last"><a href="mailto:mr@radarseven.com">Strong Bad checks my email</a></li>
+		</ul>
+	</div><!-- // #footer-inner -->
+	<!-- Copyright -->
+	<div id="copyright">
+		<p>Copyright &copy; 1977&mdash;<?=date('Y')?> Michael Reiner/Radarseven. All rights reserved.</p>
+	</div><!-- // #copyright -->
+</div><!-- // #footer -->
+<!-- TypeKit -->
+<script type="text/javascript" src="http://use.typekit.com/edc5jog.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<script type="text/javascript">
+var gaJsHost=(("https:"==document.location.protocol)?"https://ssl.":"http://www.");document.write(unescape("%3Cscript src='"+gaJsHost+"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try{var pageTracker=_gat._getTracker("UA-1981887-6");pageTracker._trackPageview();}catch(err){}
+</script>
+<?php } ?>
+
 </body>
 </html>

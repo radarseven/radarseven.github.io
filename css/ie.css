@@ -1,0 +1,69 @@
+/* @group IE, suck it */
+
+/* @group Fixes */
+
+/* IE 6 */
+* html .group,
+* html #wrap:after,
+* html .clear:after,
+* html .gallery:after,
+* html a.top:after {
+	height: 1%;
+}
+
+/* IE 7 */
+*:first-child+html .group,
+*:first-child+html #wrap:after,
+*:first-child+html .clear:after,
+*:first-child+html .gallery:after,
+*:first-child+html a.top:after {
+	min-height: 1px;
+}
+
+input#process {
+	display: block;
+}
+
+/* @group Fonts */
+
+.group h2,
+.group h3,
+.patch
+{
+	font-variant: small-caps;
+}
+
+.group #skills h2, 
+.group #seeya h2 {
+	font-variant: normal;
+}
+
+/* @end */
+
+/* @end */
+
+/* @group Gallery */
+
+ul.gallery li {
+	border: 2px solid #d7d7d7;
+}
+
+
+
+/* @end */
+
+/* @group Footer */
+
+#footer {
+	background-color: #555;
+}
+
+#copyright {
+	background-color: #333;
+}
+
+/* @end */
+
+
+
+/* @end */

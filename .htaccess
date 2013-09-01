@@ -1,0 +1,36 @@
+AddHandler php5-script .php
+
+# DirectoryIndex index.php index.html
+
+Options +FollowSymLinks
+
+RewriteEngine On
+RewriteBase /  
+
+# Remove the www from URL
+# RewriteCond %{REQUEST_URI} !^/robots\.txt$
+# RewriteCond %{HTTP_HOST} \.([a-z-]+\.[a-z]{2,6})$ [NC]
+# RewriteRule ^/(.*)$ http://%1/$1 [R=301,L]         
+# Remove the www
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC] 
+#RewriteRule ^ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteRule ^(.*)$ http://%1/$1 [L,R=301]	
+
+# Do not rewrite real files
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-s
+
+# When uncommented, this redirects nothing
+#RewriteRule ^.*/ - [L]
+# Strip out the version number
+#RewriteRule ^(inc|i|mint) - [L]
+#RewriteRule ^(.*)\.[\d]+\.(css|js)$ $1.$2 [L]
+#RewriteRule !^(css|js|inc|i|mint) / [L,R=301]  
+RewriteRule .* / [L]
+                                                       
+RewriteCond %{ENV:REDIRECT_STATUS} 200
+RewriteRule .* - [L]
+
+# AddType application/x-httpd-php .html .htm
+# php_value auto_prepend_file /home/5451/domains/radarseven.com/html/mint/config/auto.php
